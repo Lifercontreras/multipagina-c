@@ -1,9 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Bienvenidos a mi pagina">
 	Este es el inicio
-	<p>Hola</p>
+	<p class="pretty-p font-myfont text-3xl">Hola</p>
+	<Icon name="mdi:delete-outline" size="56" class='text-blue-600' />
+	<Icon name="arcticons:floral" class='text-violet-600' size="50" />
+	<Icon name="el:heart-empty" class='text-red-600 hover:animate-pulse hover:scale-50' size="70" />
 </Layout>
 
+<style>
+	.pretty-p {
+		@apply bg-red-500 p-6 text-white rounded h-96;
+		
+		clip-path: polygon(100% 0%, 0% 0% , 0.00% 49.79%, 3.33% 48.71%, 6.67% 47.15%, 10.00% 45.19%, 13.33% 42.96%, 16.67% 40.61%, 20.00% 38.28%, 23.33% 36.12%, 26.67% 34.26%, 30.00% 32.82%, 33.33% 31.89%, 36.67% 31.53%, 40.00% 31.76%, 43.33% 32.56%, 46.67% 33.90%, 50.00% 35.67%, 53.33% 37.78%, 56.67% 40.09%, 60.00% 42.45%, 63.33% 44.71%, 66.67% 46.74%, 70.00% 48.41%, 73.33% 49.60%, 76.67% 50.25%, 80.00% 50.32%, 83.33% 49.79%, 86.67% 48.71%, 90.00% 47.15%, 93.33% 45.19%, 96.67% 42.96%, 100.00% 40.61%);
+	}
+</style>
