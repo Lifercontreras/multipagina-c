@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import Notification from "../components/Vue/Notification.vue";
+import ImagenSlider from "../components/ImagenSlider.astro";
 ---
 <Layout title="Conozcamonos">
     Esta es la seccion de quienes somos
+    <Notification client:load/>
+    <ImagenSlider></ImagenSlider>
 </Layout>
